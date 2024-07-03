@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Paint50 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar & Tools -->
+    <div id="toolbar" class="btn-toolbar justify-content-center" role="toolbar">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button id="brush" class="btn btn-success"> Brush </button>
+            <button id="eraser" class="btn btn-warning"> Eraser </button>
+            <input type="color" id="colorPicker">
+            <button id="clear" class="btn btn-danger"> Clear </button>
+        </div>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="canvas" aria-placeholder="Paint50" autofocus ></canvas>
+
+    <!-- Footer -->
+    <div style="width: 100%">
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container text-center">
+                <h2> Welcome to Paint50!</h2>
+                <h4> Final project for <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard's CS50X course</a> </h4>
+                <p> - <i>Nafiul Khalid</i> - Florida International University <u>2024</u></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src=" {{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

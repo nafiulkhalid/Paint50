@@ -1,0 +1,38 @@
+body {
+    font-family: Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-image: url('image1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#toolbar {
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+#toolbar button, #toolbar input {
+    margin: 5px;
+}
+
+canvas {
+    border: 1px solid black;
+    cursor: crosshair;
+    margin-top: 10px;
+    background-color: azure;
+}
+
+@media(max-width:768px){
+    canvas{
+        width: 100%;
+        height: auto;
+    }
+}
