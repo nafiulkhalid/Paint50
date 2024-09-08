@@ -1,7 +1,5 @@
 **Paint50:**
 
-URL : https://www.youtube.com/watch?v=RT8gQuSabjo
-
 **Harvard’s CS50x 2024 Final Project**
 
 
